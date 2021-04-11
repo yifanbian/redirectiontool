@@ -1,0 +1,46 @@
+name: Build, Test and Deploy
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    name: Build and Test
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup NodeJS
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 14
+      - name: Install dependencies and test
+        run: |
+          yarn install
+          yarn test
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    needs:
+      - build-and-test
+    if: ${{ success() && github.ref == 'refs/heads/main' }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          preCommands: |
+            yarn install
+            yarn liquidify-wrangler
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+          CF_DOMAIN: ${{ secrets.CF_DOMAIN }}
+          CF_KV_NAMESPACE: ${{ secrets.CF_KV_NAMESPACE }}

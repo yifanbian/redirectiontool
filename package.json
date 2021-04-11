@@ -1,0 +1,31 @@
+{
+  "name": "redirectiontool",
+  "version": "1.0.0",
+  "description": "Redirection Tool",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "liquidify-wrangler": "node liquidify-wrangler.mjs",
+    "dev": "NODE_ENV=development npm run build",
+    "format": "prettier --write '**/*.{ts,js,css,json,md}'",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^2.0.0",
+    "@types/chai": "^4.2.11",
+    "@types/jest": "^26.0.22",
+    "@types/service-worker-mock": "^2.0.1",
+    "chai": "^4.2.0",
+    "jest": "^26.6.3",
+    "liquidjs": "^9.23.3",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "service-worker-mock": "^2.0.5",
+    "ts-jest": "^26.5.4",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^4.6.0"
+  }
+}

@@ -1,0 +1,13 @@
+name = "redirectiontool"
+type = "webpack"
+webpack_config = "webpack.config.js"
+workers_dev = false
+account_id = "{{ CF_ACCOUNT_ID }}"
+zone_id = "{{ CF_ZONE_ID }}"
+routes = [
+  "https://{{ CF_DOMAIN }}/*",
+  "https://aka.{{ CF_DOMAIN }}/*"
+]
+kv-namespaces = [
+  { binding = "redirectiontool", id = "{{ CF_KV_NAMESPACE }}" }
+]
