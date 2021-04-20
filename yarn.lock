@@ -735,17 +735,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:*":
+"@types/estree@npm:*, @types/estree@npm:^0.0.47":
   version: 0.0.47
   resolution: "@types/estree@npm:0.0.47"
   checksum: 28cba548c7b61855f4ff0c20146512e71fb578253e3cb24baf1acf660c626a8a271f99848e8a8c4e0e87f177cfce28e8d1fcecb65a4aad4a92ba48fd73179289
-  languageName: node
-  linkType: hard
-
-"@types/estree@npm:^0.0.46":
-  version: 0.0.46
-  resolution: "@types/estree@npm:0.0.46"
-  checksum: 69fcf647706f5b6a475ec2f9aacf73b40866f577eef6c6f33de95cc3b4897381c2a8257646f13cd5d91fffc5debfe6289b6864ba29ad349ae68703f8b993c9f6
   languageName: node
   linkType: hard
 
@@ -1601,9 +1594,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001208":
-  version: 1.0.30001209
-  resolution: "caniuse-lite@npm:1.0.30001209"
-  checksum: 09883c58dcfef4274d130469c300b0fe51f309859697b9639d601282d3f44cf8e234cf746b43a3f40ce9e26763af5941c7306bb40a51e98455bde8f4f5c0288f
+  version: 1.0.30001211
+  resolution: "caniuse-lite@npm:1.0.30001211"
+  checksum: 7222b15450c8f8227be02a2c3c28981f6ba58374e309e04eec12036b4dbc31cfa904a13a28fe505771024c0bb701ec320a4eab50db5c5c996b4c34c8594dab03
   languageName: node
   linkType: hard
 
@@ -2158,13 +2151,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.7.0":
-  version: 5.7.0
-  resolution: "enhanced-resolve@npm:5.7.0"
+"enhanced-resolve@npm:^5.8.0":
+  version: 5.8.0
+  resolution: "enhanced-resolve@npm:5.8.0"
   dependencies:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
-  checksum: 545cfa659e9cdccf1240bccbbd1791db7ec589979d71b35df5aeaf872dd8d13fab379ad73fa960f4cb32963b85492792c0fb0866f484043740014824ae6088b9
+  checksum: a3e1131c9ba0dd6f8276f068ddac4e6469d824ee8132f748e2734722b9f25360f4cb5a7fbec1cab8cd56815a6762e0bb1b8d088cbdf2a276d30d573ac5528bbb
   languageName: node
   linkType: hard
 
@@ -3948,13 +3941,13 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"liquidjs@npm:^9.23.3":
-  version: 9.23.3
-  resolution: "liquidjs@npm:9.23.3"
+"liquidjs@npm:^9.23.4":
+  version: 9.23.4
+  resolution: "liquidjs@npm:9.23.4"
   bin:
     liquid: bin/liquid.js
     liquidjs: bin/liquid.js
-  checksum: 010f35f76536e79b80444db5672407c7a0bb85c084208f3f692c5bc03671f97f85b822551a93817c48887ace78edec3423b9d58aa54f10bac75c449f66d284a1
+  checksum: 375efac0ff0b0f46168598605615acc39c31c2de95d218ca7dcb434f8598e9df17132d585d5e79984171aa1009e99670b61a16b31e361939a865c92b61599a4a
   languageName: node
   linkType: hard
 
@@ -4903,7 +4896,7 @@ fsevents@^2.1.2:
     "@types/service-worker-mock": ^2.0.1
     chai: ^4.2.0
     jest: ^26.6.3
-    liquidjs: ^9.23.3
+    liquidjs: ^9.23.4
     prettier: ^2.0.5
     rimraf: ^3.0.2
     service-worker-mock: ^2.0.5
@@ -5366,12 +5359,12 @@ fsevents@^2.1.2:
   linkType: hard
 
 "socks@npm:^2.3.3":
-  version: 2.6.0
-  resolution: "socks@npm:2.6.0"
+  version: 2.6.1
+  resolution: "socks@npm:2.6.1"
   dependencies:
     ip: ^1.1.5
     smart-buffer: ^4.1.0
-  checksum: f670b49b2931d1388c1fcf292af9bbd3e607eefb40b1cde762a43ca7475a15f3c14aab9418de71b8ff2e65a8174e5e22392fbbbd01610885cd56722deae4380e
+  checksum: 9a5735cf9be6f756006b4c5ed23f17c15ffbfc0afb04b5d1b49516b7a27818c807a6a5b5419a65a140a1964149ec9ebb6cd8f0e06d7c60282912204d781371db
   languageName: node
   linkType: hard
 
@@ -6218,18 +6211,18 @@ typescript@^4.2.4:
   linkType: hard
 
 "webpack@npm:^5.33.2":
-  version: 5.33.2
-  resolution: "webpack@npm:5.33.2"
+  version: 5.34.0
+  resolution: "webpack@npm:5.34.0"
   dependencies:
     "@types/eslint-scope": ^3.7.0
-    "@types/estree": ^0.0.46
+    "@types/estree": ^0.0.47
     "@webassemblyjs/ast": 1.11.0
     "@webassemblyjs/wasm-edit": 1.11.0
     "@webassemblyjs/wasm-parser": 1.11.0
     acorn: ^8.0.4
     browserslist: ^4.14.5
     chrome-trace-event: ^1.0.2
-    enhanced-resolve: ^5.7.0
+    enhanced-resolve: ^5.8.0
     es-module-lexer: ^0.4.0
     eslint-scope: ^5.1.1
     events: ^3.2.0
@@ -6249,7 +6242,7 @@ typescript@^4.2.4:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 2132ec24db3b94c4bbafe821de2e3bc05f60b8eadfd8bbc1bb441d5b49309ac20c5230d592c7bebf7a6650d317ae00f69d8b577126b4c301956f3048eb439886
+  checksum: ce93de995d8d348a7a6f97fa2fabfd7d14718bc6163c4b17b758e92aba9fb908fc4e1d7a290c2482a7aa1445d68376bc51c58bc002e5daf4fc122b76dd5d2145
   languageName: node
   linkType: hard
 
@@ -6363,8 +6356,8 @@ typescript@^4.2.4:
   linkType: hard
 
 "ws@npm:^7.4.4":
-  version: 7.4.4
-  resolution: "ws@npm:7.4.4"
+  version: 7.4.5
+  resolution: "ws@npm:7.4.5"
   peerDependencies:
     bufferutil: ^4.0.1
     utf-8-validate: ^5.0.2
@@ -6373,7 +6366,7 @@ typescript@^4.2.4:
       optional: true
     utf-8-validate:
       optional: true
-  checksum: ad08761ed753cdd3f7172e9a9efc7d74e7e196623cace2380e5f74ff0abd16196e03223bd4148a34278dcbc653ee3841994635419281cbf303b3f22c589e2ec4
+  checksum: 20731aa1075336b94677f6741b674469c3c7fce9b70115bb535827c7c108a9d714f0b38ce39289b63c652870f9801afaf096f8aab32da96be62d919e80e4ed32
   languageName: node
   linkType: hard
 
