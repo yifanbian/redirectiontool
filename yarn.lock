@@ -1438,6 +1438,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"big.js@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "big.js@npm:5.2.2"
+  checksum: ea33d7d25674df4253ae3667da7f48ade6cc8828cb4f2c3a7753f53975f10cebae57e0d1ecf84f1b920b5467262dc0d4f357e5e497b138472d0e64992a8402a4
+  languageName: node
+  linkType: hard
+
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -2104,6 +2111,13 @@ __metadata:
   version: 8.0.0
   resolution: "emoji-regex@npm:8.0.0"
   checksum: 87cf3f89efb8ba028075b3dc1713e2c5609af94cbc129b1f00c3113d01dbe4bf85c9d971e75a98bf8a8508131727682ce929e4bd70e9022af4fd47d75e9507de
+  languageName: node
+  linkType: hard
+
+"emojis-list@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "emojis-list@npm:3.0.0"
+  checksum: a79126b55bc86ee8fd938235a6adf9d457c05fb5bb934e8608b7d35c878d9d1e312a67759244f5c3fba0810b508eb5617e5e6ad6886496ebcfa6832d1c8de3c4
   languageName: node
   linkType: hard
 
@@ -3921,6 +3935,17 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
+"loader-utils@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "loader-utils@npm:2.0.0"
+  dependencies:
+    big.js: ^5.2.2
+    emojis-list: ^3.0.0
+    json5: ^2.1.2
+  checksum: a1c2e48781e1501e126a32c39bc1fb1a7e2f02bd99e5aeb8853ddaf3c121fffefcc4579367f97ca6890b58369e571af1c9ec82e4e20db238d560ab359ff25c33
+  languageName: node
+  linkType: hard
+
 "locate-path@npm:^5.0.0":
   version: 5.0.0
   resolution: "locate-path@npm:5.0.0"
@@ -4836,9 +4861,9 @@ fsevents@^2.1.2:
     rimraf: ^3.0.2
     service-worker-mock: ^2.0.5
     ts-jest: ^26.5.5
-    ts-loader: ^9.0.2
+    ts-loader: 9.0.1
     typescript: ^4.2.4
-    webpack: ^5.33.2
+    webpack: ^5.35.0
     webpack-cli: ^4.6.0
   languageName: unknown
   linkType: soft
@@ -5786,18 +5811,19 @@ fsevents@^2.1.2:
   languageName: node
   linkType: hard
 
-"ts-loader@npm:^9.0.2":
-  version: 9.0.2
-  resolution: "ts-loader@npm:9.0.2"
+"ts-loader@npm:9.0.1":
+  version: 9.0.1
+  resolution: "ts-loader@npm:9.0.1"
   dependencies:
     chalk: ^4.1.0
     enhanced-resolve: ^5.0.0
+    loader-utils: ^2.0.0
     micromatch: ^4.0.0
     semver: ^7.3.4
   peerDependencies:
     typescript: "*"
     webpack: "*"
-  checksum: d527b7f81ae8ccab51075e227e3a578357f51990db11b15cb9425187805c1b53348a662776a8c90ae7d473682f5bed9a520383b55b44ae82a8ca90fa17bb8732
+  checksum: cedb6173c5cf2fdc18c95dabc7843ba81582a2b2c9c4f4bd4a33f43b133146a26a478dcdd761bb80cf188ecdd5f8c16c6f10bff26c7ced7abe4642614976c5b5
   languageName: node
   linkType: hard
 
@@ -6137,7 +6163,7 @@ typescript@^4.2.4:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.33.2":
+"webpack@npm:^5.35.0":
   version: 5.35.0
   resolution: "webpack@npm:5.35.0"
   dependencies:
