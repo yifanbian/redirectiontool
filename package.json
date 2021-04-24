@@ -2,7 +2,7 @@
   "name": "redirectiontool",
   "version": "1.0.0",
   "description": "Redirection Tool",
-  "main": "index.js",
+  "main": "dist/worker.production.js",
   "scripts": {
     "build": "webpack",
     "liquidify-wrangler": "node liquidify-wrangler.mjs",

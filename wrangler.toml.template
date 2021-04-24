@@ -1,5 +1,5 @@
 name = "redirectiontool"
-type = "webpack"
+type = "javascript"
 webpack_config = "webpack.config.js"
 workers_dev = false
 account_id = "{{ CF_ACCOUNT_ID }}"
@@ -11,3 +11,7 @@ routes = [
 kv-namespaces = [
   { binding = "redirectiontool", id = "{{ CF_KV_NAMESPACE }}" }
 ]
+
+[build]
+upload.format = "service-worker"
+command = "yarn install && yarn build"
