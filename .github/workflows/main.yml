@@ -44,6 +44,7 @@ jobs:
           preCommands: |
             yarn install
             yarn liquidify-wrangler
+            yarn build
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
