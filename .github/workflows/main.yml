@@ -15,10 +15,15 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 14
-      - name: Install dependencies and test
+          node-version: 16
+      - name: Install dependencies
         run: |
           yarn install
+      - name: Build
+        run: |
+          yarn build
+      - name: Test
+        run: |
           yarn test
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
