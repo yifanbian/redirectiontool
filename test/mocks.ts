@@ -1,8 +1,12 @@
 export function makeMockKV(name: string): { [_: string]: KVNamespace } {
     const data: { [_: string]: unknown } = {};
     const cloudflareWorkerKV: KVNamespace = {
-        get<T extends unknown>(key: string, type?: 'text' | 'json' | 'arrayBuffer' | 'stream'):
+        get<T extends unknown>(key: string, otherOption?: unknown):
             Promise<string | T | ArrayBuffer | ReadableStream | null> {
+            const type = (otherOption === null || otherOption === undefined ? null :
+                (typeof (otherOption) === 'string' ? otherOption as string :
+                    (otherOption as { type?: string })?.type))
+                ?? 'string';
             if (key in data) {
                 if (type === 'json') {
                     return Promise.resolve(data[key] as T);
