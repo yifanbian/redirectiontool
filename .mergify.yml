@@ -1,0 +1,20 @@
+pull_request_rules:
+  - name: Automatic approval for dependabot
+    conditions:
+      - author~=^dependabot(|-preview)\[bot\]$
+      - check-success=Build and Test
+      - base=main
+    actions:
+      review:
+        type: APPROVE
+        message: Automatically approving dependabot
+  - name: Automatic merge for dependabot when approved
+    conditions:
+      - author~=^dependabot(|-preview)\[bot\]$
+      - "#approved-reviews-by>=1"
+      - base=main
+    actions:
+      merge:
+        method: merge
+        strict: smart
+        priority: low
