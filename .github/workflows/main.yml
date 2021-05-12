@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Test
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - name: Setup NodeJS
         uses: actions/setup-node@v2.1.5
         with:
@@ -36,7 +36,7 @@ jobs:
       - build-and-test
     if: ${{ success() && github.ref == 'refs/heads/main' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@1.3.0
         with:
