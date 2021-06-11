@@ -1,7 +1,7 @@
 # Redirection Tool
 
-[![GitHub Action status](https://github.com/bianyifan/redirectiontool/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/bianyifan/redirectiontool/actions/workflows/main.yml)
-[![codecov](https://codecov.io/gh/bianyifan/redirectiontool/branch/main/graph/badge.svg?token=H3MPGX46V9)](https://codecov.io/gh/bianyifan/redirectiontool)
+[![GitHub Actions Status](https://github.com/yifanbian/redirectiontool/actions/workflows/main.yml/badge.svg)](https://github.com/yifanbian/redirectiontool/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/yifanbian/redirectiontool/branch/main/graph/badge.svg?token=Epym2C8qmU)](https://codecov.io/gh/yifanbian/redirectiontool)
 
 A redirection tool, just like `aka.ms`.
 
