@@ -20,11 +20,11 @@ export function makeMockKV(name: string): { [_: string]: KVNamespace } {
             }
             return Promise.resolve(null);
         },
-        getWithMetadata<T extends unknown>(key: string, type?: 'text' | 'json' | 'arrayBuffer' | 'stream'):
+        getWithMetadata<T extends unknown>(key: string, otherOptions?: unknown):
             Promise<any> {
             return Promise.resolve(undefined);
         },
-        put(_key: string, _value: string | ReadableStream | ArrayBuffer | FormData):
+        put(_key: string, _value: string | ReadableStream | ArrayBuffer | ArrayBufferView, options?: KVNamespacePutOptions):
             Promise<void> {
             data[_key] = _value;
             return Promise.resolve(undefined);
@@ -34,12 +34,8 @@ export function makeMockKV(name: string): { [_: string]: KVNamespace } {
             delete data[_key];
             return Promise.resolve(undefined);
         },
-        list(options?: { prefix?: string; limit?: number; cursor?: string; }):
-            Promise<{
-                keys: { name: string; expiration?: number; metadata?: unknown }[];
-                list_complete: boolean;
-                cursor: string;
-            }> {
+        list<T>(options?: KVNamespaceListOptions):
+            Promise<KVNamespaceListResult<T>> {
             return Promise.resolve({
                 cursor: '1234567890',
                 keys: Object.keys(data).map(x => ({ name: x, expiration: 1234 })),
