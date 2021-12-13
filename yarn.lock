@@ -2820,10 +2820,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-liquidjs@^9.28.6:
-  version "9.28.6"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.28.6.tgz#dbc18295148060fcc8050a9bcdb40c21c4265fe0"
-  integrity sha512-64BV/FaCMSrjTyYTuz3p1tiVcd4MEjV3L4wcTiXQXvZOfqRhctZXJcwaNt+BxCCqchQgnn7uwl+Ina8tfyGyug==
+liquidjs@^9.29.0:
+  version "9.29.0"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.29.0.tgz#da0770f018fc58e257960c57bcf0fbbcf8ad5a40"
+  integrity sha512-lnowf3fRcwjqaom8sQSImJeHWZS2974DFlMl8sTdlQX/P846MhK14C0oRGYHaXiDjJbhDzi0zKc1HB4y8hUArw==
 
 loader-runner@^4.2.0:
   version "4.2.0"
