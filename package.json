@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@cloudflare/workers-types": "^3.5.0",
+    "@cloudflare/workers-types": "^3.5.1",
     "@types/chai": "^4.3.1",
     "@types/jest": "^27.4.1",
     "@types/service-worker-mock": "^2.0.1",
