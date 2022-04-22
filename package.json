@@ -18,7 +18,7 @@
     "@types/service-worker-mock": "^2.0.1",
     "chai": "^4.3.6",
     "jest": "^26.6.3",
-    "liquidjs": "^9.36.2",
+    "liquidjs": "^9.37.0",
     "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
     "service-worker-mock": "^2.0.5",
