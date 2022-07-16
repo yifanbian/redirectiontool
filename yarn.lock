@@ -2698,10 +2698,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-liquidjs@^9.39.0:
-  version "9.39.0"
-  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.39.0.tgz#0ee685118d397354556c35f558c3e5d3ecddc12c"
-  integrity sha512-WmsBwFlvhHrMtrlSjVR58kAYjZT/0QVO5sqw4zs9mpGQdf3xTon388WbWwOwyCoTtKzXwedbvWtq2M2wnozr0g==
+liquidjs@^9.39.1:
+  version "9.39.1"
+  resolved "https://registry.yarnpkg.com/liquidjs/-/liquidjs-9.39.1.tgz#850039c7c95ad5fa5ff66aa3dddfd6d2fad93128"
+  integrity sha512-TFu19Cml0K2T34UY50ZKUApHgiiEaayqNW9J3o3ubLQCuhMFhY7jqwNpY1oVvvAJxCCxVqL6bJnGc1Fktth0Fw==
 
 loader-runner@^4.2.0:
   version "4.2.0"
