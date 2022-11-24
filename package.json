@@ -19,7 +19,7 @@
     "chai": "^4.3.7",
     "jest": "^26.6.3",
     "liquidjs": "^9.42.1",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "rimraf": "^3.0.2",
     "service-worker-mock": "^2.0.5",
     "ts-jest": "^26.5.6",
