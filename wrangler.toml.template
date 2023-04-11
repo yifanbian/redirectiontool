@@ -1,17 +1,7 @@
 name = "redirectiontool"
-type = "javascript"
-webpack_config = "webpack.config.js"
-workers_dev = false
-account_id = "{{ CF_ACCOUNT_ID }}"
-zone_id = "{{ CF_ZONE_ID }}"
-routes = [
-  "https://{{ CF_DOMAIN }}/*",
-  "https://aka.{{ CF_DOMAIN }}/*"
-]
-kv-namespaces = [
-  { binding = "redirectiontool", id = "{{ CF_KV_NAMESPACE }}" }
-]
+main = "src/index.ts"
+compatibility_date = "2023-04-11"
 
-[build]
-upload.format = "service-worker"
-command = "yarn install && yarn build"
+kv_namespaces = [
+  { binding = "redirectiontool", id = "{{ CF_KV_NAMESPACE }}", preview_id = "{{ CF_KV_PREVIEW_NAMESPACE }}" }
+]

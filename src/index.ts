@@ -1,8 +1,15 @@
-/* istanbul ignore file */
-import { Worker } from './handler';
+import { handle } from './handler';
 
-addEventListener('fetch', (event: Event) => {
-  const worker = new Worker();
-  const fetchEvent = event as FetchEvent;
-  fetchEvent.respondWith(worker.handle(fetchEvent.request));
-});
+export interface Env {
+  redirectiontool: KVNamespace;
+}
+
+export default {
+  async fetch(
+    request: Request,
+    env: Env,
+    ctx: ExecutionContext,
+  ): Promise<Response> {
+    return await handle(request, env.redirectiontool);
+  },
+};

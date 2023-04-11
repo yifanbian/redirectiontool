@@ -1,31 +1,19 @@
 {
   "name": "redirectiontool",
-  "version": "1.0.0",
-  "description": "Redirection Tool",
-  "main": "dist/worker.production.js",
-  "scripts": {
-    "build": "webpack",
-    "liquidify-wrangler": "node liquidify-wrangler.mjs",
-    "dev": "NODE_ENV=development npm run build",
-    "format": "prettier --write '**/*.{ts,js,css,json,md}'",
-    "test": "jest"
-  },
-  "license": "MIT",
+  "type": "module",
+  "version": "0.0.0",
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230404.0",
-    "@types/chai": "^4.3.4",
-    "@types/jest": "^27.5.0",
-    "@types/service-worker-mock": "^2.0.1",
-    "chai": "^4.3.7",
-    "jest": "^26.6.3",
     "liquidjs": "^10.7.0",
-    "prettier": "^2.8.7",
-    "rimraf": "^5.0.0",
-    "service-worker-mock": "^2.0.5",
-    "ts-jest": "^26.5.6",
-    "ts-loader": "^9.4.2",
-    "typescript": "^4.9.5",
-    "webpack": "^5.78.0",
-    "webpack-cli": "^5.0.1"
+    "typescript": "^5.0.4",
+    "vitest": "^0.30.1",
+    "wrangler": "2.15.0"
+  },
+  "private": true,
+  "scripts": {
+    "config": "node liquidify-wrangler.mjs",
+    "start": "npm run config && wrangler dev",
+    "deploy": "npm run config && wrangler publish",
+    "test": "npm run config && vitest"
   }
 }
