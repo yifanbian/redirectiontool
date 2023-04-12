@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230404.0",
+    "@vitest/coverage-c8": "^0.30.1",
     "liquidjs": "^10.7.0",
     "typescript": "^5.0.4",
     "vitest": "^0.30.1",
@@ -14,6 +15,7 @@
     "config": "node liquidify-wrangler.mjs",
     "start": "npm run config && wrangler dev",
     "deploy": "npm run config && wrangler publish",
-    "test": "npm run config && vitest"
+    "test": "npm run config && vitest",
+    "test-with-coverage": "npm run config && vitest run --coverage"
   }
 }
