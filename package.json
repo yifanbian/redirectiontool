@@ -8,7 +8,7 @@
     "liquidjs": "^10.7.0",
     "typescript": "^5.0.4",
     "vitest": "^0.30.1",
-    "wrangler": "2.15.0"
+    "wrangler": "3.0.0"
   },
   "private": true,
   "scripts": {
