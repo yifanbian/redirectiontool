@@ -20,14 +20,14 @@ jobs:
           npm install
       - name: Test
         run: |
-          npm run test-with-coverage
+          npm run test #-with-coverage
         env:
           CF_KV_NAMESPACE: ${{ secrets.CF_KV_NAMESPACE }}
           CF_KV_PREVIEW_NAMESPACE: ${{ secrets.CF_KV_PREVIEW_NAMESPACE }}
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+      # - name: Upload coverage to Codecov
+      #   uses: codecov/codecov-action@v3
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
   deploy:
     runs-on: ubuntu-latest
     name: Deploy
