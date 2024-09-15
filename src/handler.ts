@@ -6,9 +6,6 @@ export async function handle(
     return new Response(null, { status: 405 });
   }
 
-  await database.put('test', 'test');
-
-  console.log(await database.list());
   const path = new URL(request.url).pathname;
   const redirectionLocation = await database.get(path);
   if (redirectionLocation == null) {
