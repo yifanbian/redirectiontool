@@ -6,7 +6,7 @@
     "@cloudflare/workers-types": "^4.20250420.0",
     "@swc/cli": "^0.7.3",
     "@swc/core": "^1.11.21",
-    "@vitest/coverage-v8": "^2.1.5",
+    "@vitest/coverage-v8": "^3.1.1",
     "liquidjs": "^10.21.0",
     "typescript": "^5.8.3",
     "vitest": "^2.1.1",
