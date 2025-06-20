@@ -5,7 +5,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250619.0",
     "@swc/cli": "^0.7.7",
-    "@swc/core": "^1.12.1",
+    "@swc/core": "^1.12.3",
     "@vitest/coverage-v8": "^2.1.5",
     "liquidjs": "^10.21.1",
     "typescript": "^5.8.3",
