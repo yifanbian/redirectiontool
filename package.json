@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250918.0",
+    "@cloudflare/workers-types": "^4.20250921.0",
     "@swc/cli": "^0.7.8",
     "@swc/core": "^1.13.5",
     "@vitest/coverage-v8": "^3.2.4",
