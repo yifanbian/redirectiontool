@@ -9,7 +9,7 @@
     "@vitest/coverage-v8": "^3.2.4",
     "liquidjs": "^10.24.0",
     "typescript": "^5.9.3",
-    "vitest": "^3.2.4",
+    "vitest": "^4.0.5",
     "wrangler": "^4.45.3"
   },
   "private": true,
