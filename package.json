@@ -10,7 +10,7 @@
     "liquidjs": "^10.24.0",
     "typescript": "^5.9.3",
     "vitest": "^3.2.4",
-    "wrangler": "^4.57.0"
+    "wrangler": "^4.58.0"
   },
   "private": true,
   "scripts": {
