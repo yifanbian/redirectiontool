@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260402.1",
-    "@swc/cli": "^0.8.0",
+    "@swc/cli": "^0.8.1",
     "@swc/core": "^1.15.21",
     "@vitest/coverage-v8": "^3.2.4",
     "liquidjs": "^10.25.2",
